@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MenuActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ac"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-83dp" />
+
+    <Button
+        android:id="@+id/btn_cooling"
+        android:layout_width="311dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/teal_200"
+        android:onClick="CoolingActivity"
+        android:text="cooling"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_heating"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_bt"
+        android:layout_width="311dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="288dp"
+        android:background="@color/teal_200"
+        android:onClick="BTActivity"
+        android:text="BT Connection"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_weather"
+        android:layout_width="311dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="232dp"
+        android:background="@color/teal_200"
+        android:onClick="weatherActivity"
+        android:text="temperature/battary_status"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_heating"
+        android:layout_width="311dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/teal_200"
+        android:onClick="heatingActivity"
+        android:text="heating"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_weather" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-2dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
